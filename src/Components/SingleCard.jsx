@@ -1,8 +1,9 @@
 import React from 'react'
 import './SingleCard.css'
-export const SingleCard = ({card,handleChoice,flipped,disable}) => {
+export const SingleCard = ({card,handleChoice,flipped,disbale}) => {
     const handleclick=()=>{
-        if(!disable){
+        console.log(disbale);
+        if(!disbale){
             handleChoice(card)
         }
         
